@@ -54,13 +54,6 @@ def show_tasks():
     conn.commit()
     conn.close()
 
-def create_table():
-    c.execute("CREATE TABLE tasks (task text)")
-
-add_table_lbl = Label(root, text="PS. only press button on first visit").grid(row=0, column=0, columnspan=2)
-
-add_table_btn = Button(root, text="Create Table", command=create_table).grid(row=1, column=0, columnspan=2)
-
 add_task_e = Entry(root, width=37)
 add_task_e.grid(row=2, column=1, pady=(10, 0))
 
