@@ -53,6 +53,8 @@ def show_tasks():
 
     conn.commit()
     conn.close()
+    
+# c.execute("CREATE TABLE tasks (task text)")
 
 add_task_e = Entry(root, width=37)
 add_task_e.grid(row=2, column=1, pady=(10, 0))
